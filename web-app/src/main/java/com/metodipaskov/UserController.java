@@ -6,6 +6,6 @@ public class UserController {
 
     User saveUser(UserCommand userCommand) {
         // fake impl
-        return new User();
+        return UserMapper.INSTANCE.userCommandToUser(userCommand);
     }
 }
